@@ -1,0 +1,167 @@
+.fetch-modal {
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.fetch-span {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1rem;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.react-autosuggest__container {
+  position: relative;
+}
+
+.input-class::placeholder {
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.input-class {
+  width: 200%;
+  padding: 10px;
+  background-color: #2b2b2b;
+  font-size: 15px;
+  color: white;
+  outline: none;
+  border: 1px rgba(255, 255, 255, 0.596) solid;
+  border-radius: 5px;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 51px;
+  width: 200%;
+  max-height: 25rem;
+  border: 1px solid #aaa;
+  background-color: #2b2b2b;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+  overflow-y: scroll;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+  color: white;
+  transition: 300ms;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.548);
+  margin: 10px;
+  background-color: #3d3d3d;
+  border-radius: 8px;
+}
+
+.react-autosuggest__suggestion:hover {
+  background-color: rgb(66, 66, 66);
+}
+
+.react-autosuggest__suggestion--highlighted {
+  filter: brightness(1.3);
+}
+
+.react-autosuggest__suggestion-match {
+  color: #08b6ce;
+  font-weight: bold;
+}
+
+.suggestion-cont {
+  display: flex;
+}
+
+.suggestion-pic {
+  height: 10rem;
+}
+
+.suggestion-spans {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.span-bot {
+  padding: 1rem;
+  height: 100%;
+  display: block;
+  width: 13rem;
+  position: relative;
+}
+
+.span-rated {
+  font-size: 15px;
+  border-radius: 3px;
+  border: 2px solid white;
+  padding: 5px;
+  text-align: center;
+}
+
+.span-dur {
+  flex: 2;
+  margin-left: 2rem;
+  position: absolute;
+  right: 0;
+  padding-right: 3rem;
+}
+
+.span-bot-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.span-year {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.span-price {
+  color: white;
+  margin-left: auto;
+  background-color: rgb(158, 12, 12);
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #181818;
+}
+
+@media screen and (max-width: 938px) {
+  .input-class {
+    width: 180%;
+  }
+  .react-autosuggest__suggestions-container--open {
+    width: 180%;
+  }
+  .span-price {
+    margin-right: 2rem;
+  }
+}

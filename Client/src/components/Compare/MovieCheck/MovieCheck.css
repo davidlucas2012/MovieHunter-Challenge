@@ -1,0 +1,206 @@
+.mc-main-cont {
+  transition: 200ms;
+  height: fit-content;
+  display: flex;
+  width: 100wh;
+  margin: 3rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.459);
+}
+
+.del-btn:hover {
+  transform: scale(1.2);
+}
+
+.del-btn {
+  transition: 300ms;
+  filter: invert(1);
+  width: 2%;
+  object-fit: scale-down;
+  margin-right: -3%;
+  cursor: pointer;
+}
+
+.mc-left {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.mc-cover {
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: scale-down;
+}
+
+.mc-mid {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mc-title {
+  font-size: 23px;
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline 1px white;
+  text-underline-offset: 7px;
+}
+
+.mc-desc {
+  color: rgb(175, 175, 175);
+  margin-top: 1rem;
+}
+
+.mc-label {
+  color: gray;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.mc-director {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cast-div {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.mc-cast {
+  color: white;
+  flex: 1;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  white-space: nowrap;
+  margin-right: 1rem;
+}
+
+.mc-right {
+  display: flex;
+  flex: 1.5;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.mc-upper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mc-rated {
+  margin-left: 2rem;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: 15px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid lightgray;
+  font-weight: bolder;
+}
+
+.mc-time {
+  font-size: 18px;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.mc-price {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 2rem;
+  background-color: rgb(158, 12, 12);
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #181818;
+}
+
+.mc-lower {
+  flex: 1;
+  display: flex;
+}
+
+.mc-rate-cont {
+  align-content: center;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #363636;
+  border-radius: 8px;
+  margin: 1rem;
+  border: rgba(255, 255, 255, 0.603) 1px solid;
+  padding: 5px;
+}
+
+.mc-rating-img {
+  object-fit: scale-down;
+  width: 5rem;
+  height: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mc-rating-span {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  color: lightgray;
+}
+
+.book-ticket-cont {
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+  justify-content: center;
+  transition: 300ms;
+  font-weight: bolder;
+}
+
+.book-ticket-cont:hover {
+  background-color: #08b6ce;
+}
+
+@media screen and (max-width: 960px) {
+  .mc-main-cont {
+    flex-direction: column;
+  }
+
+  .mc-title {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .mc-lower {
+    flex-direction: column;
+  }
+
+  .mc-upper {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .del-btn {
+    width: 1.5rem;
+    margin-right: -2.5rem;
+  }
+}

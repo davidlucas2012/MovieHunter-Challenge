@@ -1,0 +1,19 @@
+.sr-main-cont {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  justify-content: space-evenly;
+  overflow-x: hidden;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.mov-cont {
+  width: 10rem;
+  height: 20rem;
+  margin: 1rem;
+}
+
+.search-span {
+}

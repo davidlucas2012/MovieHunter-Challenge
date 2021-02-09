@@ -1,0 +1,293 @@
+.booking-main-cont {
+  display: flex;
+  padding: 2rem;
+  overflow-y: scroll;
+  max-height: 90vh;
+  max-width: 60vw;
+  background-color: #181818;
+}
+
+.book-close-btn {
+  background-color: rgba(0, 0, 0, 0.397);
+  color: white;
+  cursor: pointer;
+  z-index: 5;
+  border: 1px solid white;
+  width: 2.5rem;
+  margin-top: -1rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.img-back {
+  width: 30px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mov-cover {
+  margin-top: -1rem;
+  width: 13rem;
+  object-fit: scale-down;
+  margin-bottom: 1rem;
+}
+
+.booking-price-cont {
+  margin: auto;
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  flex-direction: column;
+}
+
+.ticket-price-cont {
+  display: flex;
+}
+
+.ticket-price-desc {
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  border: white solid 2px;
+}
+
+.ticket-price {
+  font-size: 20px;
+
+  margin-top: 2rem;
+  margin-left: 1rem;
+  color: white;
+}
+.total-price-cont {
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+.total-price-desc {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  color: #076a77;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.booking-right {
+  max-width: 30vw;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 35rem;
+  justify-content: center;
+}
+
+.mov-title {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  color: white;
+  font-size: 25px;
+}
+
+.mov-desc {
+  color: rgba(255, 255, 255, 0.747);
+  margin-top: 1rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
+  font-weight: lighter;
+}
+
+.book-date {
+  margin-top: 2rem;
+  color: lightgray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(32%) sepia(24%) saturate(3088%) hue-rotate(152deg)
+    brightness(86%) contrast(95%);
+}
+.date {
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 3px;
+  height: 2rem;
+}
+
+.book-time-cont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+.time-selected {
+  border-radius: 8px;
+  border: 2px solid white;
+  padding: 0.5rem;
+  color: white;
+  margin: 0.5rem;
+  cursor: pointer;
+  width: 4rem;
+  text-align: center;
+  background-color: #076a77;
+}
+
+.time-unselected {
+  width: 4rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 0.5rem;
+  color: white;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.booking-ticket-cont {
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
+  height: 5rem;
+}
+
+.count-desc {
+  color: gray;
+  margin-top: auto;
+}
+
+.add-ticket {
+  cursor: pointer;
+  margin: 1rem;
+  background-color: #00000073;
+  border-radius: 50%;
+  border: white solid 1px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: 300ms;
+}
+
+.add-ticket:hover {
+  transition: 200ms;
+  background-color: #076a77;
+}
+
+.add-minus-span {
+  color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: transparent;
+}
+
+.ticket-count {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.ticket-span {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.minus-ticket {
+  cursor: pointer;
+  margin: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  background-color: #00000073;
+  color: white;
+  border-radius: 50%;
+  border: white solid 1px;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  transition: 300ms;
+}
+
+.minus-ticket:hover {
+  transition: 200ms;
+  background-color: #076a77;
+}
+
+.pay-booking {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  border: white solid 1px;
+  color: white;
+  background-color: #076a77;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.pay-booking:hover {
+  transition: 200ms;
+  filter: brightness(1.3);
+}
+
+.pa-stripe-div {
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 960px) {
+  .book-close-btn {
+    margin-top: -1rem;
+  }
+  .booking-main-cont {
+    flex-direction: column;
+    max-width: 90vw;
+  }
+  .booking-right {
+    margin-top: 2rem;
+    margin-left: 0rem;
+    max-width: 100vw;
+    min-height: 30rem;
+  }
+
+  .mov-cover {
+    width: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mov-title {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .count-desc {
+    margin-top: 2rem;
+  }
+
+  .book-time-cont {
+    font-size: 10px;
+  }
+}

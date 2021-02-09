@@ -1,0 +1,155 @@
+.movies-cont {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  min-width: 400px;
+}
+
+.movies-cont:hover .btn-cont {
+  opacity: 1;
+}
+
+.movie-section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.movie-section::-webkit-scrollbar {
+  height: 0;
+}
+
+/* .movies-cont:hover .movie-section::-webkit-scrollbar {
+  height: 5px;
+  background: transparent;
+  transition: 300ms;
+} */
+
+.spacer {
+  width: 0.5rem;
+  color: transparent;
+}
+
+.mov-list-title {
+  color: white;
+  font-size: 25px;
+  padding-left: 2rem;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  flex-direction: row;
+  margin-bottom: -15rem;
+  margin-top: 10rem;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0;
+  transition: 200ms;
+}
+
+.btn-left {
+  background-color: rgba(0, 0, 0, 0.418);
+  border-radius: 8px;
+  margin-left: 1rem;
+  pointer-events: fill;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  color: white;
+  padding: 1rem;
+}
+
+.arrow-left {
+  filter: invert(1);
+}
+
+.btn-right {
+  background-color: rgba(0, 0, 0, 0.418);
+  border-radius: 8px;
+  margin-right: 1rem;
+  pointer-events: fill;
+  justify-content: center;
+  display: flex;
+  vertical-align: middle;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  color: white;
+  padding: 1rem;
+  margin-left: auto;
+}
+
+.arrow-right {
+  filter: invert(1);
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 960px) {
+  .movies-cont {
+    margin-top: 1rem;
+  }
+  .btn-cont {
+    opacity: 0;
+    display: none;
+  }
+
+  .movies-cont:hover .btn-cont {
+    opacity: 0;
+  }
+}
+
+.info-modal {
+  border-radius: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  background-color: transparent;
+
+  outline: none;
+}
+
+.modal-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: 500ms;
+  z-index: 99;
+}
+.info-modal-cont {
+  width: 100vw;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 300ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateY(50px);
+}

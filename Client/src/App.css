@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.sr-cont {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+
+.sr-span {
+  margin-left: 5rem;
+  color: gray;
+}
+
+.sr-result {
+  margin-left: 1rem;
+  color: white;
+}
+
+@media screen and (max-width: 960px) {
+  .sr-cont {
+    font-size: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+
+  .sr-result {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .span-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
